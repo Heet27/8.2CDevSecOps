@@ -30,5 +30,8 @@ jobs:
 
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@v2
+        with:
+          projectKey: Heet27_8.2CDevSecOps       # <-- your actual project key
+          organization: heet27                  # <-- your SonarCloud org name (from URL)
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
